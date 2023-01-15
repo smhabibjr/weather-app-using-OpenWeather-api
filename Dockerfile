@@ -1,6 +1,9 @@
-FROM ruby:3.1
-RUN apt-get update -yqq
-RUN apt-get install -yqq --no-install-recommends nodejs
+FROM ruby:3.1.3-alpine
+RUN apk add \
+    build-base \
+    tzdata \
+    nodejs
+
 COPY . /usr/src/app
 WORKDIR /usr/src/app
 RUN bundle
