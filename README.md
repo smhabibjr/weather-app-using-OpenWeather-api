@@ -28,10 +28,10 @@ To run this application you don't need to install ruby or ruby on rails on your 
 
 To build a docker image. Open the terminal from your project directory.
 ````
-docker build MyweatherApp .
+docker build . -t my-weather-app
 ````
 Build and Run the container.
 ````
-docker run -p 3000:3000 weatherApp 
+docker run -p 3000:3000 my-weather-app
 ````
 After running the container. Go to the browser and curl http://localhost:3000
