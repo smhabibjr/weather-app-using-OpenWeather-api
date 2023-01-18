@@ -8,17 +8,22 @@ class WeatherController < ApplicationController
 
   def create
     city_name = params[:city_name]
-    api = "https://api.openweathermap.org/data/2.5/weather?q=#{city_name}&appid=16a8abdab0d5094d487dcb85522759e7"
-    uri = URI(api)
-    res = Net::HTTP.get_response(uri)
-    if res.is_a?(Net::HTTPSuccess)
-      url_status =  res.body
-      redirect_to weather_show_path(api_status: url_status)
-      asdf =1
+    api = "https://api.openweathermap.org/data/2.5/weather?q=#{city_name}&appid=16a8abdab0d5094d487dcb85522759e7&units=metric"
+    if api
+      uri = URI(api)
+      res = Net::HTTP.get_response(uri)
+      if res.is_a?(Net::HTTPSuccess)
+        url_status =  res.body
+        redirect_to weather_show_path(api_status: url_status)
+        asdf =1
+      else
+        redirect_to weather_show_path(), :notice => "Data not found! Try again"
+        asdfasdf = 1
+      end
     else
-      redirect_to weather_show_path(), :notice => "Data not found! Try again"
-      asdfasdf = 1
+      redirect_to root_path, :notice => "City can not be found!"
     end
+
   end
 
   def show
