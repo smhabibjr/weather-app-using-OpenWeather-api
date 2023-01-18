@@ -1,3 +1,10 @@
+### Screenshot
+
+![Unbenannt](https://user-images.githubusercontent.com/77357735/213229848-c80762d7-f45b-45d5-8d70-768ce1972ddd.PNG)
+
+![2Unbenannt](https://user-images.githubusercontent.com/77357735/213229904-51bccdf2-74ff-48ef-b7a0-aefec5312704.PNG)
+
+
 ### Configuration
 
 Clone this repository.
@@ -21,7 +28,7 @@ To run this application you don't need to install ruby or ruby on rails on your 
 
 To build a docker image. Open the terminal from your project directory.
 ````
-docker build weatherApp .
+docker build MyweatherApp .
 ````
 Build and Run the container.
 ````
