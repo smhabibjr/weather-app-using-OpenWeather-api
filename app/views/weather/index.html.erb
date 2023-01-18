@@ -1,0 +1,29 @@
+<div data-controller="weather" class="container d-flex justify-content-center align-items-center vh-100">
+
+  <div class="card text-dark bg-light mb-3 h-15 w-50">
+    <div class="card-header">Real time Weather forecasts </div>
+    <div class="card-body">
+
+      <%= form_with url: "/weather", local: true, data: { turbo: false }, method: :post do |form| %>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">City Name</label>
+          <%= form.text_field :city_name, :class=> "form-control"%>
+          <div id="emailHelp" class="form-text">Please enter the city name correctly.</div>
+        </div>
+
+        <div class="submit-btn">
+          <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+              <%= form.submit "Submit", :class=> "btn btn-primary w-50" %>
+            </div>
+          </div>
+        </div>
+
+      <% end %>
+
+
+
+    </div>
+  </div>
+
+</div>

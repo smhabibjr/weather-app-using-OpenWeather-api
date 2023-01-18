@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root 'home#index'
+  resources :weather, only: [:index, :create,]
+  root 'weather#index'
+  get 'weather/show' => "weather#show"
 end

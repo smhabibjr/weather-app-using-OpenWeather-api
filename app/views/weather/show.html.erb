@@ -1,0 +1,27 @@
+<div data-controller="weather" class="container d-flex justify-content-center align-items-center vh-100">
+
+  <div class="card text-dark bg-light mb-3 h-50 w-50">
+    <div class="card-header">Current weather </div>
+    <div class="card-body">
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">City Name</label>
+          <p> <%= @api_status[:name] %> </p>
+          <div id="emailHelp" class="form-text">Please enter the city name correctly.</div>
+        </div>
+
+        <div class="submit-btn">
+          <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+              <p> <%= @api_status[:name] %> </p>
+            </div>
+          </div>
+        </div>
+
+
+
+    </div>
+
+  </div>
+
+</div>
