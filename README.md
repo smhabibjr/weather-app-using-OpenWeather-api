@@ -24,7 +24,7 @@ Save your project.
 
 ### Run
 
-To run this application you don't need to install ruby or ruby on rails on your local machine. Because this project has been configured with a docker file.
+To run this application you don't need to install ruby or ruby on rails on your local machine. Because this project has been configured with a docker file. Just you have to have docker installed on your local machine.
 
 To build a docker image. Open the terminal from your project directory.
 ````
