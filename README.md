@@ -1,9 +1,8 @@
 ### Screenshot
 
-![Unbenannt](https://user-images.githubusercontent.com/77357735/213229848-c80762d7-f45b-45d5-8d70-768ce1972ddd.PNG)
+![image](https://user-images.githubusercontent.com/77357735/215267239-1f98e59a-3669-4acf-bcb5-8890bb1bcb29.png)
 
-![2Unbenannt](https://user-images.githubusercontent.com/77357735/213229904-51bccdf2-74ff-48ef-b7a0-aefec5312704.PNG)
-
+![image](https://user-images.githubusercontent.com/77357735/215267334-35e61204-4737-4f1c-8092-8ba7f775c436.png)
 
 ### Configuration
 
