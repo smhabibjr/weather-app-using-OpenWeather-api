@@ -40,7 +40,7 @@ export default class extends Controller {
         data: state,
         async: false,
         success: function (response) {
-          $('#select_city').empty().append('<option value="">Select State</option>')
+          $('#select_city').empty().append('<option value="">Select City</option>')
           $.each(response, function( index, value ) {
             $('#select_city').append(`<option value="${value}">
                                        ${value}
