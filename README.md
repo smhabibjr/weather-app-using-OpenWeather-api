@@ -17,9 +17,17 @@ cd weather-app-using-OpenWeather-api
 Open this project to a code IDE. Like VS Code, Atom, etc
 
 Open this file app/controllers/weather_controller.rb and replace your own [openWeather API](https://openweathermap.org/api) code.
+
 ````
-api = "https://api.openweathermap.org/data/2.5/weather?q=#{city_name}&appid=#{api_code}&units=metric"
+api_code = "_your_api_code_here_"
 ````
+
+For example,if your open weather API code is look like this:  `6grt3434rf4564545f343434`
+
+Then after replacing, API variable value would be look like the below. (Line no. 11)
+
+` api_code = "6grt3434rf4564545f343434" `
+
 Save your project.
 
 ### Run
