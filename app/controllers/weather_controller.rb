@@ -8,7 +8,7 @@ class WeatherController < ApplicationController
 
   def create
     city_name = params[:city_name]
-    api_code = "3d17107befe225852920075b62e24849"
+    api_code = "_your_api_code_here_"
     api = "https://api.openweathermap.org/data/2.5/weather?q=#{city_name}&appid=#{api_code}&units=metric"
     if api
       uri = URI(api)
